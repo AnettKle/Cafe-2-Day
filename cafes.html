@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Reviews</title>
+  <link rel="stylesheet" href="cafes.css">
+  <!-- Include Naver Map API script with your API key -->
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bmjhzdvnq6"></script>
+</head>
+<body>
+  <div id="content_container">
+    <div id="form_container">
+      <div id="form_header_container">
+        <h3 id="write-review-heading">Write a Review</h3>
+      </div>
+
+      <div id="form_content_container">
+        <div id="form_content_inner_container">
+          <select id="cafe-select" onchange="showCafeLocation(this.value)">
+            <option value="">-- Select a Cafe --</option>
+            <option value="Awluk">Awluk</option>
+            <option value="Good Enough">Good Enough</option>
+            <option value="Goof">Goof</option>
+            <option value="kkongtemua">kkongtemua</option>
+          </select>
+
+          <!-- Naver Map container -->
+          <div id="map" style="width:100%;height:400px;"></div>
+
+          <div id="cafe-details">
+            <h3 id="selected-cafe"></h3> <!-- Added to display selected cafe name -->
+            <ul id="reviews-list"></ul>
+            <form id="review-form">
+              <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+              <input type="file" id="review-image" accept="image/*"> <!-- Add input for image upload -->
+              <button type="submit">Submit Review</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="button_container">
+        <button onclick="showCafeReviews()">Close Reviews</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase and your JavaScript file -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+  <script src="cafes.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
