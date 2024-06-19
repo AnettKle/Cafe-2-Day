@@ -58,6 +58,9 @@ const firebaseConfig = {
             reviewCell.textContent = review.text;
             reviewCell.classList.add('text');
             reviewRow.appendChild(reviewCell);
+
+            // const highlightedText = searchText.replace(new RegExp(searchTerm, 'gi'), match => `<span class="highlight">${match}</span>`);
+            // reviewCell.innerHTML = highlightedText;
   
             // Create a cell for the review image
             if (review.imageURL) {
