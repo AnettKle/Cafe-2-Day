@@ -1,0 +1,196 @@
+/* cafes.css */
+
+/* Apply styles to the HTML and body */
+html, body {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    color: #fff;;/* Remove default margin */
+}
+
+/* Apply styles to all elements */
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the content */
+#content_container {
+    width: 30%;
+    height: 70%;
+}
+
+/* Container for the form */
+#form_container {
+    width: 100%;
+    background-color: #370617;
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+/* Container for the form header */
+#form_header_container {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    -webkit-text-fill-color: #fff;
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
+    background: #000000;
+}
+
+/* Style for the form header */
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: white;
+}
+
+/* Container for the form content */
+#form_content_container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/* Container for the inner form content */
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Set flex direction to column */
+}
+/* Apply styles to input fields */
+input,
+textarea,
+select {
+    width: 100%;
+    height: 40px; /* Adjust height for textarea */
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
+}
+
+/* Adjust styles for the submit button */
+#review-form button[type="submit"] {
+    width: 100%; /* Adjust width to fill container */
+    height: 40px; /* Adjust height to match input fields */
+    background: #000; /* Changed background to match input fields */
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+    border: 2px solid transparent; /* Added border */
+    border-radius: 2%; /* Added border-radius */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Adjust button style on hover */
+#review-form button[type="submit"]:hover {
+    background: #111; /* Darken background on hover */
+}
+
+/* Container for the buttons */
+#button_container {
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
+    color: #000000;
+    float: left;
+    margin-top: 20px;
+}
+#button_container button {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+    border: 2px solid transparent;
+    border-radius: 2%;
+    cursor: pointer;
+    margin: 5px 0; /* Add some spacing between the buttons */
+}
+#map {
+    flex-grow: 1; /* Expand to fill remaining space */
+    width: 100%;
+    height: 400px; /* Set initial height */
+    margin-bottom: 20px;
+}
+
+/* Adjust styles for image display */
+#reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.review-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.review-text {
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.review-image {
+    width: auto;
+    margin-top: 50px;
+    height: auto;
+    max-height: 200px;
+    max-height: 150px; /* Adjust this value to set the maximum height */
+    margin-top: 10px; /* Adjust the top margin as needed */
+    justify-content: center;
+}
+
+
+
+
+
+
