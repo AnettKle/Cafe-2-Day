@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyD7r8Ds8RbxgiGHc0h73oSrro6DDdyGuqI",
+    apiKey: "yourkey",
     authDomain: "cafeproject-acc8a.firebaseapp.com",
     projectId: "cafeproject-acc8a",
     storageBucket: "cafeproject-acc8a.appspot.com",
